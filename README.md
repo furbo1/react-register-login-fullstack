@@ -13,6 +13,60 @@ This project provides a template for quickly setting up a React application with
 - User credentials stored in local storage for demonstration purposes, easily connect to any database of your choice.
 - Styled with TailwindCSS for a sleek, responsive design.
 
+
+## Using the Template
+
+To use this template, clone the repository or use the provided CLI tool to scaffold a new project:
+
+npx react-register-login
+
+## Installation and Running the Project
+
+This project is structured with separate directories for the frontend and backend, ensuring a clean separation of concerns and ease of development. Follow the steps below to set up and run both parts of the application.
+
+## To run the project from root folder and start both fronend and server, this require "concurrently" packages:
+
+- npm install
+- npm start
+- open your default web browser to http://localhost:3000
+- register a user, credentials will be stored in local storage this should not be used in production, for production connect to any database of your choice
+- login with the user you just registered and modify the app as you desire
+
+## Alterantively, you can start both frontend and backend separately if you don't want to use "concurently" package:
+
+## Backend Setup
+
+- cd backend
+- npm install
+- node server.js # or nodemon server.js
+
+## Frontend Setup
+
+- cd frontend
+- npm install
+- npm start
+- open your default web browser to http://localhost:3000
+- register a user, credentials will be stored in local storage this should not be used in production, for production connect to any database of your choice
+- login with the user you just registered and modify the app as you desire
+
+## Customization
+
+## Database Integration
+
+By default, user credentials are stored in local storage for demonstration purposes. For production applications, it's recommended to integrate a secure database for managing user credentials. The backend can be easily extended to connect with any database of your choice (e.g., MongoDB, PostgreSQL, Firebase) by modifying the server logic.
+
+## TailwindCSS Customization
+
+The frontend's appearance can be customized via TailwindCSS by editing the tailwind.config.js file. For more detailed instructions on customizing TailwindCSS, refer to their official documentation.
+
+## Contribution
+
+Contributions to this template are welcome! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request on GitHub.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
 ```
 react-register-login/
 ├── backend/
@@ -44,55 +98,3 @@ react-register-login/
 ├── package.json
 └── README.md
 ```
-
-## Using the Template
-
-To use this template, clone the repository or use the provided CLI tool to scaffold a new project:
-
-npx react-register-login
-
-## Installation and Running the Project
-
-This project is structured with separate directories for the frontend and backend, ensuring a clean separation of concerns and ease of development. Follow the steps below to set up and run both parts of the application.
-
-## To run the project from root folder and start both fronend and server, this require "concurrently" packages:
-
-npm install
-npm start
-
-## Alterantively, you can start both frontend and backend separately if you don't want to use "concurently" package:
-
-## Backend Setup
-
-cd backend
-npm install
-node server.js # or nodemon server.js
-
-## Frontend Setup
-
-cd frontend
-npm install
-npm start
-
-This will start the React development server, typically on http://localhost:3000, and open your default web browser to that URL.
-TailwindCSS
-
-This project uses TailwindCSS for styling the frontend. TailwindCSS is a utility-first CSS framework that allows for rapid UI development. For more information and documentation on TailwindCSS, visit their website.
-
-## Customization
-
-## Database Integration
-
-By default, user credentials are stored in local storage for demonstration purposes. For production applications, it's recommended to integrate a secure database for managing user credentials. The backend can be easily extended to connect with any database of your choice (e.g., MongoDB, PostgreSQL, Firebase) by modifying the server logic.
-
-## TailwindCSS Customization
-
-The frontend's appearance can be customized via TailwindCSS by editing the tailwind.config.js file. For more detailed instructions on customizing TailwindCSS, refer to their official documentation.
-
-## Contribution
-
-Contributions to this template are welcome! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request on GitHub.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
