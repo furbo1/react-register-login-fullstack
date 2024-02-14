@@ -7,12 +7,13 @@ This project provides a template for quickly setting up a React application with
 - Register/Login functionality with basic client-side validation.
 - Passport.js - Passport is a flexible and modular authentication middleware for Node.js that we use to handle user authentication. It supports a wide range of strategies, including OAuth, token-based authentication, and more. In this template, Passport is configured to manage login sessions and authenticate users securely.
 - Password Hashing with bcrypt - For password security, I used bcrypt, a robust hashing algorithm designed to secure passwords. Bcrypt automatically handles salt generation and hashing, offering protection against rainbow table attacks and brute-force attacks. Here's why bcrypt is a great choice for password hashing:
-    * Salting: Bcrypt incorporates a salt to protect against rainbow table attacks. A new salt is generated for each password, ensuring that each hash is unique, even for identical passwords.
-    * Work Factor: The algorithm's work factor is adjustable, which means the time required to generate a hash can be increased as hardware capabilities improve, thereby maintaining a high level of security over time.
+  - Salting: Bcrypt incorporates a salt to protect against rainbow table attacks. A new salt is generated for each password, ensuring that each hash is unique, even for identical passwords.
+  - Work Factor: The algorithm's work factor is adjustable, which means the time required to generate a hash can be increased as hardware capabilities improve, thereby maintaining a high level of security over time.
 - Navigation bar for easy access to Home, About, and Contact pages.
 - User credentials stored in local storage for demonstration purposes, easily connect to any database of your choice.
 - Styled with TailwindCSS for a sleek, responsive design.
 
+```
 react-register-login/
 ├── backend/
 │   ├── server.js
@@ -42,7 +43,7 @@ react-register-login/
 ├── .gitignore
 ├── package.json
 └── README.md
-
+```
 
 ## Using the Template
 
@@ -54,18 +55,21 @@ npx react-register-login
 
 This project is structured with separate directories for the frontend and backend, ensuring a clean separation of concerns and ease of development. Follow the steps below to set up and run both parts of the application.
 
-# To run the project from root folder and start both fronend and server, this require "concurrently" packages:
+## To run the project from root folder and start both fronend and server, this require "concurrently" packages:
+
 npm install
 npm start
 
-# Alterantively, you can start both frontend and backend separately if you don't want to use "concurently" package:
+## Alterantively, you can start both frontend and backend separately if you don't want to use "concurently" package:
 
-# Backend Setup
+## Backend Setup
+
 cd backend
 npm install
 node server.js # or nodemon server.js
 
-# Frontend Setup
+## Frontend Setup
+
 cd frontend
 npm install
 npm start
@@ -75,16 +79,20 @@ TailwindCSS
 
 This project uses TailwindCSS for styling the frontend. TailwindCSS is a utility-first CSS framework that allows for rapid UI development. For more information and documentation on TailwindCSS, visit their website.
 
-# Customization
+## Customization
 
 ## Database Integration
+
 By default, user credentials are stored in local storage for demonstration purposes. For production applications, it's recommended to integrate a secure database for managing user credentials. The backend can be easily extended to connect with any database of your choice (e.g., MongoDB, PostgreSQL, Firebase) by modifying the server logic.
 
 ## TailwindCSS Customization
+
 The frontend's appearance can be customized via TailwindCSS by editing the tailwind.config.js file. For more detailed instructions on customizing TailwindCSS, refer to their official documentation.
 
 ## Contribution
+
 Contributions to this template are welcome! If you have suggestions for improvements or encounter any issues, please feel free to open an issue or submit a pull request on GitHub.
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
