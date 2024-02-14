@@ -1,0 +1,30 @@
+{
+    "name": "react-register-login-fullstack",
+    "version": "1.0.0",
+    "description": "A fullstack React application template with secure user authentication, featuring React for the frontend and Node.js/Express for the backend, styled with TailwindCSS and secured with Passport and bcrypt.",
+    "private": true,
+    "scripts": {
+      "postinstall": "npm run install-frontend && npm run install-backend",
+      "install-frontend": "cd frontend && npm install",
+      "install-backend": "cd backend && npm install",
+      "start": "concurrently --kill-others-on-fail \"npm run start-frontend\" \"npm run start-backend\"",
+      "start-frontend": "cd frontend && npm start",
+      "start-backend": "cd backend && npm run dev"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/furbo1/react-register-login-fullstack.git"
+    },
+    "keywords": ["react", "nodejs", "express", "passport", "bcrypt", "authentication", "fullstack", "tailwindcss"],
+    "author": "Alex Cocan <alexcocan@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/furbo1/react-register-login-fullstack/issues"
+    },
+    "homepage": "https://github.com/furbo1/react-register-login-fullstack.git",
+    "devDependencies": {
+      "concurrently": "^7.0.0"
+    }
+  }
+  
+  
